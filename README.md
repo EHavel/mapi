@@ -1,65 +1,31 @@
-# mapi README
+## Descrição
 
-This is the README for your extension "mapi". After writing up a brief description, we recommend including the following sections.
+Esta extensão fornece realce de sintaxe, autocompletar e outros recursos essenciais para trabalhar com arquivos `.mapi` (Markdown API) no Visual Studio Code.
 
-## Features
+O formato `.mapi` é projetado para criar documentação de API em um formato markdown amigável. Esta extensão visa melhorar a eficiência e a experiência do desenvolvedor ao trabalhar com arquivos `.mapi`.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Características
 
-For example if there is an image subfolder under your extension project workspace:
+- Realce de sintaxe específico para o formato `.mapi`.
+- [WIP] Autocompletar para tópicos comuns e campos da API.
+- [WIP] Linting para verificar erros comuns e garantir a consistência da documentação.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Instalação
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Abra o VS Code.
+2. Vá para a Visual Studio Code Marketplace.
+3. Pesquise por "Mapi API Markdown language support".
+4. Instale a extensão.
+5. Reinicie o VS Code.
 
-## Requirements
+## Uso
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Após a instalação, todos os arquivos com a extensão `.mapi` terão automaticamente o realce de sintaxe e os recursos da extensão ativados.
 
-## Extension Settings
+## Contribuindo
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Estamos abertos a contribuições! Se você encontrou um bug ou deseja adicionar um novo recurso, sinta-se à vontade para abrir uma issue ou pull request no nosso [https://github.com/EHavel/mapi](https://github.com/EHavel/mapi).
 
-For example:
+## Licença
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Esta extensão é licenciada sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
