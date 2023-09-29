@@ -14,7 +14,7 @@ O formato `.mapi` é projetado para criar documentação de API em um formato ma
 
 1. Abra o VS Code.
 2. Vá para a Visual Studio Code Marketplace.
-3. Pesquise por "Mapi API Markdown language support".
+3. Pesquise por "mAPI".
 4. Instale a extensão.
 5. Reinicie o VS Code.
 
@@ -24,7 +24,7 @@ Após a instalação, todos os arquivos com a extensão `.mapi` terão automatic
 
 ## Contribuindo
 
-Estamos abertos a contribuições! Se você encontrou um bug ou deseja adicionar um novo recurso, sinta-se à vontade para abrir uma issue ou pull request no nosso [https://github.com/EHavel/mapi](https://github.com/EHavel/mapi).
+Estamos abertos a contribuições! Se você encontrou um bug ou deseja adicionar um novo recurso, sinta-se à vontade para abrir uma issue ou pull request no repositório [https://github.com/EHavel/mapi](https://github.com/EHavel/mapi).
 
 ## Licença
 

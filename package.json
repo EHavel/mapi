@@ -1,7 +1,7 @@
 {
   "name": "mapi",
-  "displayName": "Mapi",
-  "description": "Api Markdown",
+  "displayName": "mAPI",
+  "description": "Markdown API",
   "version": "0.0.1",
   "author": "Eric Havel",
   "license": "GPL-3.0-only",
@@ -25,7 +25,9 @@
         "id": "mapi",
         "aliases": [
           "Mapi",
-          "mapi"
+          "mapi",
+          "MAPI",
+          "mAPI"
         ],
         "extensions": [
           ".mapi"

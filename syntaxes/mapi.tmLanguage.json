@@ -1,13 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Mapi",
+  "name": "mAPI",
   "patterns": [
     {
       "name": "custom.response-section",
       "begin": "^(## (Response|Models))",
       "end": "(?=^(## [^\\s]+|$)(?!\\s*$))",
       "beginCaptures": {
-        "1": { "name": "custom.green" }
+        "1": {
+          "name": "custom.green"
+        }
       },
       "patterns": [
         {
