@@ -3,9 +3,14 @@
   "displayName": "Mapi",
   "description": "Api Markdown",
   "version": "0.0.1",
+  "author": "Eric Havel",
+  "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
     "url": "git@github.com:EHavel/mapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EHavel/mapi/issues"
   },
   "engines": {
     "vscode": "^1.82.0"
