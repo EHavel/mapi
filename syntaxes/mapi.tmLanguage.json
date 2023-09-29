@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Mapi",
+  "patterns": [
+    {
+      "name": "custom.response-section",
+      "begin": "^(## (Response|Models))",
+      "end": "(?=^(## [^\\s]+|$))",
+      "beginCaptures": {
+        "1": { "name": "custom.green" }
+      },
+      "patterns": [
+        {
+          "name": "custom.yellow",
+          "match": "(?<==)([^\"]*)(?=//)"
+        },
+        {
+          "name": "custom.orange",
+          "match": "\\$\\w+"
+        },
+        {
+          "name": "custom.blue",
+          "match": "(?<=:)(\\s*(?:(?!\\$)\\w)+)"
+        },
+        {
+          "name": "custom.yellow",
+          "match": "\"([^\"]*)\""
+        },
+        {
+          "name": "custom.gray",
+          "match": "//.*"
+        },
+        {
+          "name": "custom.pink",
+          "match": "="
+        },
+        {
+          "name": "custom.pink",
+          "match": "-"
+        },
+        {
+          "name": "custom.pink",
+          "match": ":"
+        },
+        {
+          "name": "custom.pink",
+          "match": "\\?"
+        },
+        {
+          "name": "custom.blue",
+          "match": "\\[([^\\[|\\]|$|\"]*)\\]"
+        }
+      ]
+    },
+    {
+      "name": "custom.green",
+      "match": "#.*"
+    }
+  ],
+  "repository": {},
+  "scopeName": "source.mapi"
+}

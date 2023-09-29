@@ -1,0 +1,34 @@
+# Feature
+Health - Home
+
+## Request
+- path: "/superapp/health"
+- method: "get"
+- description: "Api responsável por montar a home de saúde"
+- parameters: []
+
+## Response
+- support_url: string = "https://url-de-suporte" - Descrição do campo
+- add_pet_url: string = "https://url-de-add-pet" - Descrição do campo
+- pets: array[$pet] - Descrição do campo
+- tag: $tag
+- status: $status
+- table: array[$table_item]
+- links_list: array[string] = ["item1", "item2"]
+
+## Models
+
+- pet: object
+  - id: integer = 1 - Descrição do campo
+
+- tag: object
+  - label: string
+  - icon: string?
+
+- status: enum
+  - active: string
+  - blocked: string
+
+- table_item: object
+  - label: string
+  - value: string

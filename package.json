@@ -1,0 +1,76 @@
+{
+  "name": "mapi",
+  "displayName": "Mapi",
+  "description": "Mapeamento de api",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mapi",
+        "aliases": [
+          "Mapi",
+          "mapi"
+        ],
+        "extensions": [
+          ".mapi"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mapi",
+        "scopeName": "source.mapi",
+        "path": "./syntaxes/mapi.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "custom.pink",
+            "settings": {
+              "foreground": "#FF69B4"
+            }
+          },
+          {
+            "scope": "custom.yellow",
+            "settings": {
+              "foreground": "#F1FA8C"
+            }
+          },
+          {
+            "scope": "custom.blue",
+            "settings": {
+              "foreground": "#8be9fd"
+            }
+          },
+          {
+            "scope": "custom.green",
+            "settings": {
+              "foreground": "#50FA7B"
+            }
+          },
+          {
+            "scope": "custom.orange",
+            "settings": {
+              "foreground": "#FFB86C"
+            }
+          },
+          {
+            "scope": "custom.gray",
+            "settings": {
+              "foreground": "#6272A4"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
