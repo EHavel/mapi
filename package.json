@@ -1,8 +1,12 @@
 {
   "name": "mapi",
   "displayName": "Mapi",
-  "description": "Mapeamento de api",
+  "description": "Api Markdown",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EHavel/mapi.git"
+  },
   "engines": {
     "vscode": "^1.82.0"
   },
