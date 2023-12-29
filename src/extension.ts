@@ -16,9 +16,9 @@ class MeuCodeLensProvider implements vscode.CodeLensProvider {
         // Cria um Code Lens para a linha
         const range = new vscode.Range(line.range.start, line.range.end);
         const command: vscode.Command = {
-          title: 'Gerar Response',
-          command: 'extension.executarAcao', // Comando padrão
-          arguments: [line.text], // Argumentos adicionais, se necessário
+          title: 'Generate Response',
+          command: 'extension.generateResponse', // Comando padrão
+          arguments: [document],
         };
         const codeLens = new vscode.CodeLens(range, command);
 
@@ -46,15 +46,26 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(disposable);
 
-  // Registra o comando para 'extension.executarAcao'
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      'extension.executarAcao',
-      (text: string) => {
-        // Lógica para executar a ação quando o Code Lens é clicado
+      'extension.generateResponse',
+      (document: vscode.TextDocument) => {
         vscode.window.showInformationMessage(
-          `Ação executada para a linha: ${text}`
+          `2 Ação executada para a linha: ${document.lineAt(0)}`
         );
+
+        // vscode.window.showTextDocument(document);
+
+        // for (
+        //   let lineNumber = 0;
+        //   lineNumber < document.lineCount;
+        //   lineNumber++
+        // ) {
+        //   const line = document.lineAt(lineNumber);
+        //   vscode.window.showInformationMessage(
+        //     `Ação executada para a linha: ${line}`
+        //   );
+        // }``
       }
     )
   );
