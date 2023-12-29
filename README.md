@@ -14,13 +14,31 @@ O formato `.mapi` é projetado para criar documentação de API em um formato ma
 
 1. Abra o VS Code.
 2. Vá para a Visual Studio Code Marketplace.
-3. Pesquise por "mAPI".
+3. Pesquise por "mapi".
 4. Instale a extensão.
 5. Reinicie o VS Code.
+
+## Gramatica
+
+Para o uso da grámatica de sintaxe, usamos https://macromates.com/manual/en/language_grammars
 
 ## Uso
 
 Após a instalação, todos os arquivos com a extensão `.mapi` terão automaticamente o realce de sintaxe e os recursos da extensão ativados.
+
+## Como gerar versão de teste?
+
+Na raiz do projeto basta executar:
+
+```bash
+vsce package
+```
+
+Caso não tenha instalado o `vsce`, use o comando:
+
+```bash
+npm install -g vsce
+```
 
 ## Contribuindo
 
