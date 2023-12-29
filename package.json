@@ -1,33 +1,45 @@
 {
   "name": "mapi",
-  "displayName": "mAPI",
-  "description": "Markdown API",
-  "version": "0.0.1",
-  "author": "Eric Havel",
-  "license": "GPL-3.0-only",
+  "displayName": "mapi",
+  "description": "Markdown API for Visual Studio Code",
+  "version": "0.2.6",
   "publisher": "ehavel",
+  "author": {
+    "name": "Eric Havel",
+    "email": "eric.havel@gmail.com"
+  },
+  "icon": "images/mapi_icon.png",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/EHavel/mapi/issues",
+    "email": "eric.havel@gmail.com"
+  },
+  "homepage": "https://github.com/EHavel/mapi",
   "repository": {
     "type": "git",
     "url": "git@github.com:EHavel/mapi.git"
-  },
-  "bugs": {
-    "url": "https://github.com/EHavel/mapi/issues"
   },
   "engines": {
     "vscode": "^1.82.0"
   },
   "categories": [
+    "Other",
+    "Snippets",
+    "Linters",
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onLanguage:mapi"
+  ],
+  "main": "./dist/extension",
   "contributes": {
     "languages": [
       {
         "id": "mapi",
         "aliases": [
-          "Mapi",
-          "mapi",
           "MAPI",
-          "mAPI"
+          "Mapi",
+          "mapi"
         ],
         "extensions": [
           ".mapi"
@@ -42,47 +54,32 @@
         "path": "./syntaxes/mapi.tmLanguage.json"
       }
     ],
-    "configurationDefaults": {
-      "editor.tokenColorCustomizations": {
-        "textMateRules": [
-          {
-            "scope": "custom.pink",
-            "settings": {
-              "foreground": "#FF69B4"
-            }
-          },
-          {
-            "scope": "custom.yellow",
-            "settings": {
-              "foreground": "#F1FA8C"
-            }
-          },
-          {
-            "scope": "custom.blue",
-            "settings": {
-              "foreground": "#8be9fd"
-            }
-          },
-          {
-            "scope": "custom.green",
-            "settings": {
-              "foreground": "#50FA7B"
-            }
-          },
-          {
-            "scope": "custom.orange",
-            "settings": {
-              "foreground": "#FFB86C"
-            }
-          },
-          {
-            "scope": "custom.gray",
-            "settings": {
-              "foreground": "#6272A4"
-            }
-          }
-        ]
+    "codeLens": [
+      {
+        "language": "mapi",
+        "pattern": "**/*.mapi"
       }
-    }
+    ]
+  },
+  "scripts": {
+    "compile": "webpack --config ./build/webpack.config.js --mode production",
+    "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
+    "vscode:prepublish": "npm run lint && npm run compile"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.57.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "changelog-machine": "^1.0.2",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "ts-loader": "^9.3.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2",
+    "vscode-test": "^1.6.1",
+    "webpack": "^5.71.1",
+    "webpack-cli": "^4.9.2"
   }
 }
